@@ -1,0 +1,11 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">GifsApp</h3>
+    <hr class="text-white">
+
+    <!-- El pipe no lo vimos pero lo que hace es modificar como se ve el dato pero sin modificar el dato real-->
+    <div class="list-group list-reset">
+        <button class="list-group-item list-group-item-action" *ngFor="let tag of tags" (click) = "searchTag(tag)">
+            {{tag | titlecase}}
+        </button>
+    </div>
+</div>
